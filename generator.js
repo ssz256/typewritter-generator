@@ -1,9 +1,11 @@
+const typewritterHTMLLocation = "https://szylaz123.github.io/typewritter-API/typewritter.html";
+
 function generate() {
     let text = document.getElementById("typewritterSentencesLength").value;
     while (text.replace("\n", "&&&") != text) {
         text = text.replace("\n", "&&&");
     }
-    let url = window.location.protocol + "/" + window.location.host + "/" + window.location.pathname.split("/")[1] + "/typewritter.html?" + text;
+    let url = typewritterHTMLLocation + "?" + text;
     while (url.replace(" ", "%20") != url) {
         url = url.replace(" ", "%20");
     }
