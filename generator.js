@@ -1,4 +1,4 @@
-const typewritterHTMLLocation = "https://szylaz123.github.io/typewritter-API/typewritter.html";
+const typewritterHTMLLocation = "https://szylaz123.github.io/typewritter-generator/typewritter.html";
 
 function generate() {
     let text = document.getElementById("typewritterSentencesLength").value;
