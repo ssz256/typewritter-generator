@@ -3,7 +3,7 @@ function generate() {
     while (text.replace("\n", "&&&") != text) {
         text = text.replace("\n", "&&&");
     }
-    let url = window.location.protocol + "/" + window.location.host + "/" + "typewritter.html?" + text;
+    let url = window.location.protocol + "/" + window.location.host + "/" + window.location.pathname.split("/")[1] + "/typewritter.html?" + text;
     while (url.replace(" ", "%20") != url) {
         url = url.replace(" ", "%20");
     }
